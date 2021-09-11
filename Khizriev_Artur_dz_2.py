@@ -7,6 +7,3 @@ idx = 0
 for i in range(1, 6):
         cube_list.append(i**3)
         print(cube_list)
-
-
-
