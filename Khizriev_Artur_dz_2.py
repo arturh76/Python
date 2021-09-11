@@ -1,1 +1,12 @@
-print("hello")
+cube_list = []
+my_list = []
+n_sum = 0
+all_sum = 0
+idx = 0
+
+for i in range(1, 6):
+        cube_list.append(i**3)
+        print(cube_list)
+
+
+
