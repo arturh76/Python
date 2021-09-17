@@ -1,9 +1,3 @@
-cube_list = []
-my_list = []
-n_sum = 0
-all_sum = 0
-idx = 0
-
 # инициализируем переменные
 list_of_cubes = []
 add_list_of_cubes = []
@@ -45,9 +39,6 @@ for ind, val in enumerate(add_list_of_cubes):
         all_sum += add_list_of_cubes[ind]
 
 print(all_sum)
-
-# 17485588610
-# 15392909930
 
 
 
