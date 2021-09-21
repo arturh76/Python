@@ -8,4 +8,3 @@ for item in my_list:
       message += ' '
       result = message.split()[-1]
       print('Привет, ' + result.title() + '!')
-
