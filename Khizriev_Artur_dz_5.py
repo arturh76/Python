@@ -8,20 +8,21 @@ prices = [57.08, 46.51, 97, 51, 1.76, 20, 25.08, 76, 23.34, 98.90, 70.01, 63,
 # вывод значение с добавлением
 for item in prices:
    if (type(item)) == int:
-         print('%s руб 00 коп' % (item))
+         print('%s руб 00 коп' %item, end=" ")
    else:
         item = str(item)
         r, kk = item.split('.')
         r = int(r)
         kk = int(kk)
-        print('{r:} руб {kk:02d} коп'.format(r=r , kk=kk ))
+        print('{r:} руб {kk:02d} коп'.format(r=r , kk=kk ), end=" ")
 
 # вывод списка отсортированного по сортированию
+print("\n")  # вывод пустой строки
 print(id(prices))
 prices.sort()
 print(prices)
 print(id(prices))
-print()
+print("\n")  # вывод пустой строки
 
 # вывод списка отсортированного по убыванию
 prices_decrease = sorted(prices, reverse=True)
