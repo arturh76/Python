@@ -9,5 +9,3 @@ for i in my_list:
             print('{i}'.format(i=i), end=" ")
     else:
         print('"{i}"'.format(i=i), end=" ")
-
-
