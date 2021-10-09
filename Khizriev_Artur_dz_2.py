@@ -1,11 +1,14 @@
 # инициализация переменных
-my_temp = ''
 my_list = ['в', '5', 'часов', '17', 'минут', 'температура', 'воздуха', 'была', '+5', 'градусов']
 
+
 for i in my_list:
-    if i.isdigit() == True and int(i) < 10:
-        print('"0{i}"'.format(i=i), end=" ")
-        if i.isdigit() == True and int(i) > 10:
-            print('{i}'.format(i=i), end=" ")
+    sign = i[0] if i[0] in "+-" else ""
+    i = i.replace("+", "").replace("-", "")
+    if i.isdigit() and int(i) < 10:
+        print('"{}0{}"'.format(sign, i), end=" ")
+    elif i.isdigit() and int(i) > 10:
+        print('"{}{}"'.format(sign, i), end=" ")
     else:
-        print('"{i}"'.format(i=i), end=" ")
+        print('"{}"'.format(i), end=" ")
+
